@@ -1,0 +1,20 @@
+[project]
+name = "ai-eq-assistant"
+version = "0.1.0"
+description = "AI-powered voice analysis tool that provides EQ and post-processing recommendations using Google Gemini"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-genai>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+    "librosa>=0.10.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "soundfile>=0.12.0",
+    "matplotlib>=3.7.0",
+    "replicate>=0.25.0",
+]
+
+[project.scripts]
+analyze-voice = "analyze_voice:main"
