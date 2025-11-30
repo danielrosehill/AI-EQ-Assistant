@@ -13,9 +13,6 @@ build/
 # Environment
 .env
 
-# Analysis outputs (generated, not tracked)
-analysis/
-
 # Voice samples (user-specific)
 voice-samples/*.mp3
 voice-samples/*.wav

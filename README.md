@@ -134,7 +134,7 @@ The tool generates multiple visualizations to help you understand your voice's f
 
 **Spectrogram:**
 
-![Spectrogram](analysis/spectrogram.png)
+ ![alt text](analysis/spectrogram.png)
 
 **Mel Spectrogram:**
 

@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "audio_file": "1.mp3",
+    "analysis_timestamp": "2025-11-30T20:45:27.992905",
+    "models_used": {
+      "audio_analysis": "librosa",
+      "accent_detection": "gpt-4o-audio-preview"
+    }
+  },
+  "audio_analysis": {
+    "duration_seconds": 195.24,
+    "sample_rate": 44100,
+    "fundamental_frequency": {
+      "mean_hz": 76.4,
+      "min_hz": 65.4,
+      "max_hz": 135.4,
+      "std_hz": 14.4,
+      "range_hz": 70.0
+    },
+    "spectral_characteristics": {
+      "centroid_mean_hz": 2212.5,
+      "rolloff_mean_hz": 3988.4,
+      "bandwidth_mean_hz": 1897.6
+    },
+    "energy": {
+      "rms_mean": 0.0183,
+      "rms_max": 0.1116,
+      "dynamic_range_db": 15.7
+    },
+    "voice_quality": {
+      "zero_crossing_rate_mean": 0.0693,
+      "breathiness_indicator": "moderate"
+    },
+    "voice_characteristics": {
+      "voice_type": "bass",
+      "voice_range": "low",
+      "brightness": "balanced"
+    },
+    "plots": {
+      "spectrogram": "/home/daniel/repos/github/AI-EQ-Assistant/analysis/spectrogram.png",
+      "mel_spectrogram": "/home/daniel/repos/github/AI-EQ-Assistant/analysis/mel_spectrogram.png",
+      "frequency_analysis": "/home/daniel/repos/github/AI-EQ-Assistant/analysis/frequency_analysis.png"
+    }
+  },
+  "accent_analysis": {
+    "primary_accent": "Irish English (Southern Ireland)",
+    "confidence": "high",
+    "confidence_percentage": 95,
+    "phonetic_features": [
+      "Distinct pronunciation of 'th' sounds, often softened (e.g., 'think' sounds more like 'tink').",
+      "Non-rhoticity (dropping of 'r' in words like 'car' or 'father' unless followed by a vowel).",
+      "'A' vowels in words like 'bath' or 'class' pronounced with a broad, flat sound similar to British English.",
+      "Melodic intonation, with a musical rise and fall in pitch common in Irish accents."
+    ],
+    "secondary_influences": [
+      "Slight hints of Midwestern American English, possibly due to some global media influence."
+    ],
+    "regional_context": "This accent is commonly found in southern parts of Ireland, such as Dublin and surrounding areas.",
+    "speech_characteristics": {
+      "tempo": "Moderate to slow, giving a reflective and calm tone.",
+      "intonation": "Melodic and rhythmic, with noticeable rising and falling pitch patterns within sentences.",
+      "notable_sounds": [
+        "Soft 'th' sounds, replacing with more 't' or 'd' sounds.",
+        "Non-rhotic 'r' sounds at the ends of words.",
+        "Clear differentiation between long and short vowels, such as in 'coat' vs 'cot'."
+      ]
+    },
+    "analysis_notes": "The speaker\u2019s slower tempo and higher melodic intonation strongly suggest an Irish English accent. The manner in which certain consonants (like 'th') are softened, combined with non-rhoticity and vowel length distinctions, points to a Southern Irish dialect. The tone of the speaker was quite reflective and calm, which aligns with common speech patterns of people from Ireland, particularly in more rural or suburban regions."
+  },
+  "eq_recommendations": {
+    "summary": "Voice profile: bass with balanced tonal quality",
+    "recommendations": [
+      "Apply high-pass filter at 60 Hz to remove rumble without affecting voice fundamentals",
+      "Consider subtle boost (+1-2 dB) around 76 Hz to add warmth and body",
+      "Boost presence around 2500 Hz (+2-3 dB) for clarity and intelligibility",
+      "Cut 200-400 Hz range slightly (-1-3 dB) if voice sounds muddy or boxy"
+    ],
+    "eq_bands": [
+      {
+        "type": "high-pass",
+        "frequency_hz": 60,
+        "description": "Remove sub-bass rumble"
+      },
+      {
+        "type": "bell",
+        "frequency_hz": 76,
+        "gain_db": "+1 to +2",
+        "q": 1.5,
+        "description": "Add warmth and body"
+      },
+      {
+        "type": "bell",
+        "frequency_hz": 2500,
+        "gain_db": "+2 to +3",
+        "q": 1.0,
+        "description": "Enhance presence and clarity"
+      },
+      {
+        "type": "bell",
+        "frequency_hz": 300,
+        "gain_db": "-1 to -3",
+        "q": 1.0,
+        "description": "Reduce muddiness (if needed)"
+      }
+    ],
+    "accent_specific_tips": [
+      "Irish accents often have melodic qualities - preserve natural intonation by avoiding heavy compression",
+      "The characteristic 'lilt' sits in the 1-3 kHz range - be careful not to over-boost this region"
+    ],
+    "processing_suggestions": [
+      "Apply subtle compression (2:1 to 4:1 ratio) for consistent levels",
+      "Use a noise gate if there's background noise between phrases",
+      "Consider gentle saturation/warmth for added character"
+    ]
+  }
+}
