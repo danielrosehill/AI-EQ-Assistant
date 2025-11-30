@@ -13,14 +13,6 @@ build/
 # Environment
 .env
 
-# Voice samples (user-specific)
-voice-samples/*.mp3
-voice-samples/*.wav
-voice-samples/*.flac
-voice-samples/*.ogg
-voice-samples/*.m4a
-voice-samples/*.aac
-voice-samples/*.aiff
 
 # IDE
 .idea/
