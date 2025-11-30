@@ -130,19 +130,23 @@ Computed metrics include:
 
 ### Spectrograms
 
-The tool generates both raw and annotated spectrograms. The annotated version shows frequency bands commonly used for voice EQ:
+The tool generates multiple visualizations to help you understand your voice's frequency characteristics:
 
-**Raw Spectrogram:**
+**Spectrogram:**
 
-![Raw Spectrogram](analysis/spectrogram_raw_2025-11-30_20-03-11.png)
+![Spectrogram](analysis/spectrogram.png)
 
-**Annotated Spectrogram with EQ Frequency Bands:**
+**Mel Spectrogram:**
 
-![Annotated Spectrogram](analysis/spectrogram_annotated_2025-11-30_20-03-11.png)
+![Mel Spectrogram](analysis/mel_spectrogram.png)
+
+**Frequency Analysis:**
+
+![Frequency Analysis](analysis/frequency_analysis.png)
 
 ### Sample Analysis Results
 
-From a real voice analysis (see [full example report](analysis/voice_analysis_2025-11-30_20-03-57.md)):
+From a real voice analysis (see [full example report](analysis/1_analysis.pdf)):
 
 #### Parametric Data
 
