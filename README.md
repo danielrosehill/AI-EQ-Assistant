@@ -206,6 +206,23 @@ From a real voice analysis (see [full example report](analysis/1_analysis.pdf)):
 3. **Avoid processing** - Provide raw, unprocessed audio for the most accurate analysis
 4. **Multiple samples** - Analyze different speaking styles (energetic, calm, reading vs. conversational) to understand your range
 
+## Manual Analysis with Pre-Written Prompts
+
+Don't want to set up the full Python environment? The [`prompts/`](prompts/) folder contains pre-written prompts you can use directly with Google Gemini (or other multimodal LLMs):
+
+| Prompt | What It Analyzes |
+|--------|------------------|
+| [speaking-rate-wpm.md](prompts/speaking-rate-wpm.md) | Words per minute, pacing, syllable rate |
+| [pitch-analysis.md](prompts/pitch-analysis.md) | Fundamental frequency, pitch range, intonation |
+| [loudness-dynamics.md](prompts/loudness-dynamics.md) | RMS levels, dynamic range, consistency |
+| [eq-recommendations.md](prompts/eq-recommendations.md) | Parametric EQ settings with frequency/gain/Q |
+| [compression-settings.md](prompts/compression-settings.md) | Threshold, ratio, attack, release, makeup gain |
+| [voice-quality-assessment.md](prompts/voice-quality-assessment.md) | GRBAS scale, MOS ratings, overall quality |
+| [speech-linguistic.md](prompts/speech-linguistic.md) | Accent, pronunciation, articulation, prosody |
+| [full-analysis.md](prompts/full-analysis.md) | Comprehensive analysis (all of the above) |
+
+**How to use:** Upload your voice sample to [Google AI Studio](https://aistudio.google.com/), copy the prompt, and paste it in the chat
+
 ## License
 
 MIT
